@@ -39,11 +39,13 @@ h1{
   padding: 10px 0;
 }
 
+
 .emails-list__item__image{
   height: 30px;
   width: 30px;
   border-radius: 50%;
   object-fit: cover;
+  border: var(--border)
 }
 
 .emails-list__item__content{
@@ -55,9 +57,10 @@ h1{
   display: grid;
   padding: 10px;
   grid-auto-flow: column;
-  grid-template-columns: 45px 120px auto;
+  grid-template-columns: 30px 45px 120px auto;
   align-items: center;
   border-bottom:var(--border);
+  cursor: pointer;
 }
 
 .single-email{
@@ -68,6 +71,7 @@ h1{
   width: 60px;
   border-radius: 50%;
   object-fit: cover;
+  border: var(--border)
 }
 
 .single-email__sender {
