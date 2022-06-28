@@ -38,9 +38,7 @@ h1{
   border-bottom:var(--border);
   padding: 10px 0;
 }
-.emails{
-  /* background-color: green; */
-}
+
 .emails-list__item__image{
   height: 30px;
   width: 30px;
@@ -48,12 +46,46 @@ h1{
   object-fit: cover;
 }
 
+.emails-list__item__content{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .emails-list__item{
   display: grid;
   padding: 10px;
   grid-auto-flow: column;
-  grid-template-columns: 60px 100px auto;
+  grid-template-columns: 45px 120px auto;
   align-items: center;
   border-bottom:var(--border);
+}
 
+.single-email{
+  display: grid;
+}
+.single-email__image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.single-email__sender {
+  font-size: 25px;
+}
+
+
+.single-email__content{
+  font-size: 20px;
+}
+
+.single-email__button {
+  background: rgb(88, 88, 88);
+  border: none;
+  padding: 10px;
+  width: 170px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
 }
