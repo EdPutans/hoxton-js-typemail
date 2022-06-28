@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" rel="stylesheet" />
+    <script defer src="src/main.ts"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+     <header>
+      <img class="logo" src="assets/hmail-logo.png" />
+      <form onsubmit="onSubmit()">
+        <input placeholder="Filter us here!" />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <main class="">
+      <h1>Welcome to your emails!</h1>
+      <ul class="emails">
+        <li class="emails-list__item" onclick="console.log('dab')">
+          <img class="emails-list__item__image" src="assets/hmail-logo.png" />
+          <p class="emails-list__item__from">Ed or Nico</p>
+          <p>Text texxt Text text Text text Text text </p>
+        </li>
+
+        <li class="emails-list__item" onclick="onClickEmail()">
+          <img class="emails-list__item__image" src="assets/hmail-logo.png" />
+          <p class="emails-list__item__from">Ed or Nico</p>
+          <p>Text text Text text Text text Text text Text text Text text Text text Text text </p>
+        </li>
+     
+      </ul>
+    </main>
+  </body>
+</html>
